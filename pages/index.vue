@@ -22,6 +22,12 @@
   place-content: start center;
 }
 
+@media screen and (min-width: 500px) {
+  .page-index {
+    background-size: auto;
+  }
+}
+
 .page-loading,
 .page-error {
   background-color: antiquewhite;
