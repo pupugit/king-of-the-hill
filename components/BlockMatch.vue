@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="block-match">
     {{ match?.status || 'unknown' }} at {{ startedF }}: {{ match.player1?.name || 'unknown' }} vs {{
     match.player2?.name || 'unknown'
     }}

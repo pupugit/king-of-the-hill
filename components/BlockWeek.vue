@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="block-week">
     <h2>Week {{ week.nr }}: {{ startedF }}</h2>
     <BlockMatch v-for="match in week.matches" :match="match" :key="match.id" />
   </div>
