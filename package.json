@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "private": true,
+  "name": "king-of-the-hill",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@vueuse/nuxt": "^9.6.0",
+    "nuxt": "^3.0.0",
+    "nuxt-directus": "^3.2.2",
+    "nuxt-icon": "^0.1.8",
+    "sass": "^1.56.2",
+    "vue": "^3.2.45"
+  }
+}
