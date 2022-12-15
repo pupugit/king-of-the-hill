@@ -53,12 +53,12 @@ useHead({
     hid: 'og:site_name',
     name: 'og:site_name',
     property: 'og:site_name',
-    content: 'Limnionas Village',
+    content: 'King of the Hill',
   }, {
     hid: 'og:title',
     name: 'og:title',
     property: 'og:title',
-    content: 'King of the Hill'
+    content: 'commented "Through the Ages" matches'
   }, {
     hid: 'og:image',
     name: 'og:image',
