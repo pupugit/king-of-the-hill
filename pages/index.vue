@@ -16,6 +16,7 @@
   height: 100vh;
   background-color: black;
   background-image: url(/logo.png);
+  background-size: contain;
   background-position: bottom center;
   background-repeat: no-repeat;
   place-content: start center;
