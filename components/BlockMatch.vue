@@ -1,11 +1,19 @@
 <template>
   <div class="block-match">
-    {{ match?.status || 'unknown' }} at {{ startedF }}: {{ match.player1?.name || 'unknown' }} vs {{
-    match.player2?.name || 'unknown'
-    }}
+    <div>{{ match?.status || 'unknown' }} at {{ startedF }}</div>
+    <div>{{ match.player1?.name || 'unknown' }} vs {{
+        match.player2?.name || 'unknown'
+    }}</div>
   </div>
 </template>
-
+<style>
+.block-match {
+  background-color: antiquewhite;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: center;
+}
+</style>
 <script setup lang="ts">
 import type { Match } from "~~/types/directus"
 const props = defineProps<{
