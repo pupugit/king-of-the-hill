@@ -18,7 +18,7 @@ useHead({
   title: 'King of the Hill',
   link: [{
     rel: 'icon',
-    href: '/symbol.png',
+    href: 'https://kingofthehill.netlify.app/symbol.png',
     type: 'image/png'
   }],
   meta: [{
@@ -38,7 +38,7 @@ useHead({
     hid: 'og:image',
     name: 'og:image',
     property: 'og:image',
-    content: '/logo.png'
+    content: 'https://kingofthehill.netlify.app/logo.png'
   }, {
     hid: 'og:image:height',
     name: 'og:image:height',
