@@ -31,8 +31,8 @@
 .page-loading,
 .page-error {
   background-color: antiquewhite;
-  margin-top: 10vh;
-  padding: 2em;
+  margin-top: 4vh;
+  padding: 1em;
   border-radius: 2em;
 }
 </style>

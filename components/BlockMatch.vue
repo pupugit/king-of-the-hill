@@ -1,15 +1,19 @@
 <template>
   <div class="block-match">
-    <div>{{ match?.status || 'unknown' }} at {{ startedF }}</div>
-    <div>{{ match.player1?.name || 'unknown' }} vs {{
-        match.player2?.name || 'unknown'
-    }}</div>
+    <div>
+      {{ startedF }}
+    </div>
+    <div>
+      <strong>{{ match.player1?.name || '?' }}</strong>
+      <br />vs<br />
+      <strong>{{ match.player2?.name || '?' }}</strong>
+    </div>
   </div>
 </template>
 <style>
 .block-match {
   background-color: antiquewhite;
-  padding: 1em;
+  padding: .5em;
   border-radius: 1em;
   text-align: center;
 }

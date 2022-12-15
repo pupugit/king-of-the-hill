@@ -8,23 +8,23 @@
 </template>
 <style>
 .block-week {
-  margin-top: 10vh;
+  margin-top: 4vh;
   display: grid;
-  gap: 2em;
+  gap: 4vh;
   place-items: center;
 }
 
 .block-week h2 {
   margin: 0;
   background-color: antiquewhite;
-  padding: 1em;
+  padding: .75em;
   border-radius: 1em;
   text-align: center;
 }
 
 .matches {
   display: grid;
-  gap: 2em;
+  gap: 4vh;
 }
 
 .match-0 {
