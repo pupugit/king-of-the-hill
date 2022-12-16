@@ -3,7 +3,8 @@
     <h2>Week {{ week.nr }}: {{ startedF }}<br /><span style="font-weight: normal;font-size: .75em;">date/times are
         in your local time</span></h2>
     <div :class="`matches size-${matches.length}`">
-      <BlockMatch v-for="(match, idx) in matches" :match="match" :key="match.id" :class="`match match-${idx}`" />
+      <BlockMatch v-for="(match, idx) in matches" :match="match" :idx="idx" :key="match.id"
+        :class="`match match-${idx}`" />
     </div>
   </div>
 </template>

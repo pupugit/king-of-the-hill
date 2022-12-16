@@ -5,7 +5,7 @@
     </div>
     <div>
       <strong>{{ match.player1?.name || '?' }}</strong>
-      <br />vs<br />
+      <br /><img style="width: 2em;" :src="`/war_${vsColor}.png`"><br />
       <strong>{{ match.player2?.name || '?' }}</strong>
     </div>
   </div>
@@ -22,7 +22,13 @@
 import type { Match } from "~~/types/directus"
 const props = defineProps<{
   match: Match,
+  idx: number
 }>()
+const vsColor = computed(() => {
+  if (props.idx === 0) return 'yellow'
+  if (props.idx === 1) return 'red'
+  if (props.idx === 2) return 'green'
+})
 const started = ref<Date | null>(null)
 if (props.match.started) started.value = new Date(`${props.match.started}Z`)
 const df = new Intl.DateTimeFormat(undefined, {
