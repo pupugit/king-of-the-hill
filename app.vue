@@ -9,5 +9,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
+  background-color: black;
 }
 </style>

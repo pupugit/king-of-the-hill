@@ -17,8 +17,9 @@
 .page-index {
   display: grid;
   width: 100vw;
+  height: 100svw;
   height: 100vh;
-  background-color: black;
+  height: 100svh;
   background-image: url(/logo.png);
   background-size: contain;
   background-position: bottom center;
