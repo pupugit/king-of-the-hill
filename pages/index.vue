@@ -7,6 +7,10 @@
     <div class="page-error" v-else>
       No matches found or there was an error loading the data!
     </div>
+    <div class="page-stream">
+      watch it live on @
+      <a style="font-weight:bold" target="_blank" href="https://www.twitch.tv/captain_sugoi">Captain Sugoi</a>
+    </div>
   </div>
 </template>
 <style>
@@ -19,7 +23,8 @@
   background-size: contain;
   background-position: bottom center;
   background-repeat: no-repeat;
-  place-content: start center;
+  place-items: start center;
+  grid-template-rows: auto 1fr auto;
 }
 
 @media screen and (min-width: 500px) {
@@ -34,6 +39,14 @@
   margin-top: 4vh;
   padding: 1em;
   border-radius: 2em;
+}
+
+.page-stream {
+  background-color: antiquewhite;
+  padding: .5em;
+  border-radius: 2em;
+  grid-row: 3/4;
+  margin-bottom: 2vh;
 }
 </style>
 <script setup lang="ts">

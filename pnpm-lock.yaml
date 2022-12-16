@@ -4,7 +4,6 @@ specifiers:
   '@vueuse/nuxt': ^9.6.0
   nuxt: ^3.0.0
   nuxt-directus: ^3.2.2
-  nuxt-icon: ^0.1.8
   sass: ^1.56.2
   vue: ^3.2.45
 
@@ -12,7 +11,6 @@ devDependencies:
   '@vueuse/nuxt': 9.6.0_nuxt@3.0.0+vue@3.2.45
   nuxt: 3.0.0_sass@1.56.2
   nuxt-directus: 3.2.2
-  nuxt-icon: 0.1.8_vue@3.2.45
   sass: 1.56.2
   vue: 3.2.45
 
@@ -342,19 +340,6 @@ packages:
   /@hutson/parse-repository-url/3.0.2:
     resolution: {integrity: sha512-H9XAx3hc0BQHY6l+IFSWHDySypcXsvsuLhgYLUGywmJ5pswRVQJUHpOsobnLYp2ZUaUlKiKDrgWWhosOwAEM8Q==}
     engines: {node: '>=6.9.0'}
-    dev: true
-
-  /@iconify/types/2.0.0:
-    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: true
-
-  /@iconify/vue/4.0.2_vue@3.2.45:
-    resolution: {integrity: sha512-LRp+mYh8N0bcX4lustHtI5o1aEoio9HN3/19uIzVOvI78qopKBjzsDK5hkEZYDSc6+LKG8hfLxTxpW8CejXGZg==}
-    peerDependencies:
-      vue: '>=3'
-    dependencies:
-      '@iconify/types': 2.0.0
-      vue: 3.2.45
     dev: true
 
   /@ioredis/commands/1.2.0:
@@ -3697,17 +3682,6 @@ packages:
     transitivePeerDependencies:
       - rollup
       - supports-color
-    dev: true
-
-  /nuxt-icon/0.1.8_vue@3.2.45:
-    resolution: {integrity: sha512-oPFlLOZCy80MN+hf49+mBkOIHWVF3sOqZREQZw3qD0N6wGlR15QeRQtKQC8qGeQcc+xvpLQm0GvrdJ8FxFOPYg==}
-    dependencies:
-      '@iconify/vue': 4.0.2_vue@3.2.45
-      '@nuxt/kit': 3.0.0
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-      - vue
     dev: true
 
   /nuxt/3.0.0_sass@1.56.2:

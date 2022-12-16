@@ -4,7 +4,7 @@
 // import VueI18nVitePlugin from '@intlify/unplugin-vue-i18n/vite'
 
 export default defineNuxtConfig({
-  modules: ['nuxt-directus', '@vueuse/nuxt', 'nuxt-icon'],
+  modules: ['nuxt-directus', '@vueuse/nuxt'],
   directus: {
     url: process.env.NUXT_PUBLIC_DIRECTUS_BASE,
   },
