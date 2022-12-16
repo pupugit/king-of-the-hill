@@ -8,7 +8,7 @@
       No matches found or there was an error loading the data!
     </div>
     <div class="page-stream">
-      watch it live on @
+      live on twitch @
       <a style="font-weight:bold" target="_blank" href="https://www.twitch.tv/captain_sugoi">Captain Sugoi</a>
     </div>
   </div>
