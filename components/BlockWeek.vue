@@ -1,7 +1,10 @@
 <template>
   <div class="block-week">
-    <h2>Week {{ week.nr }}: {{ startedF }}<br /><span style="font-weight: normal;font-size: .75em;">date/times are
-        in your local time</span></h2>
+    <h2>Week {{ week.nr }}: {{ startedF }}<br /><span style="font-weight: normal;font-size: .75em;">
+        <template v-if="week.status === 'upcoming'">
+          Starting in about <strong>{{ startingIn }}</strong>
+        </template>
+      </span></h2>
     <div :class="`matches size-${matches.length}`">
       <BlockMatch v-for="(match, idx) in matches" :match="match" :idx="idx" :key="match.id"
         :class="`match match-${idx}`" />
@@ -52,12 +55,19 @@
 }
 </style>
 <script setup lang="ts">
+import { formatDistanceToNow } from 'date-fns'
 import type { FullWeek } from "~~/types/directus"
 const props = defineProps<{
   week: FullWeek,
 }>()
+const startingIn = ref('')
 onMounted(() => {
-  console.log(props.week)
+  if (started.value)
+    startingIn.value = formatDistanceToNow(started.value)
+  window.setTimeout(() => {
+    if (started.value)
+      startingIn.value = formatDistanceToNow(started.value)
+  }, 60000)
 })
 const started = ref<Date | null>(null)
 if (props.week.started) started.value = new Date(`${props.week.started}Z`)

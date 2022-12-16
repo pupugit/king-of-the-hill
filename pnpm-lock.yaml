@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@vueuse/nuxt': ^9.6.0
+  date-fns: ^2.29.3
   nuxt: ^3.0.0
   nuxt-directus: ^3.2.2
   sass: ^1.56.2
@@ -9,6 +10,7 @@ specifiers:
 
 devDependencies:
   '@vueuse/nuxt': 9.6.0_nuxt@3.0.0+vue@3.2.45
+  date-fns: 2.29.3
   nuxt: 3.0.0_sass@1.56.2
   nuxt-directus: 3.2.2
   sass: 1.56.2
@@ -1870,6 +1872,11 @@ packages:
   /data-uri-to-buffer/4.0.0:
     resolution: {integrity: sha512-Vr3mLBA8qWmcuschSLAOogKgQ/Jwxulv3RNE4FXnYWRGujzrRWQI4m12fQqRkwX06C0KanhLr4hK+GydchZsaA==}
     engines: {node: '>= 12'}
+    dev: true
+
+  /date-fns/2.29.3:
+    resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
+    engines: {node: '>=0.11'}
     dev: true
 
   /dateformat/3.0.3:
