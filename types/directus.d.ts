@@ -4,6 +4,7 @@ export type Week = {
   finished: string | null
   status: 'upcoming' | 'running' | 'finished'
   nr: number
+  winner: Player | null
 }
 export type Player = {
   id: string
@@ -29,5 +30,5 @@ export type FullWeek = {
   status: 'upcoming' | 'running' | 'finished'
   nr: number
   matches: Match[]
-  king: Player | null
+  winner: Player
 }
