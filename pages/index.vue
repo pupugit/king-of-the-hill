@@ -7,8 +7,9 @@
     <div class="page-error" v-else>
       No matches found or there was an error loading the data!
     </div>
-    <div class="page-stream">
-      live on twitch @
+    <div :class="`page-stream ${currentWeek ? currentWeek.status : ''}`">
+      <span v-if="currentWeek?.status === 'running'" style="font-weight:bold;color:green">now live</span>
+      <span v-else>on twitch</span> @
       <a style="font-weight:bold" target="_blank" href="https://www.twitch.tv/captain_sugoi">Captain Sugoi</a>
     </div>
   </div>
@@ -48,6 +49,23 @@
   border-radius: 2em;
   grid-row: 3/4;
   margin-bottom: 2vh;
+}
+
+.page-stream.running {
+  animation-duration: 1s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  to {
+    transform: translate3d(0, -10px, 0) scale(1.2);
+  }
 }
 </style>
 <script setup lang="ts">
@@ -95,9 +113,17 @@ useHead({
     content: 'A "Through the Ages" commentated series of matches in the "King of the Hill" format'
   }]
 })
-
+const currentWeek = computed(() => {
+  if (weeks.value.length > 0) {
+    return weeks.value[0]
+  }
+  return null
+})
 onMounted(async () => {
-  await initFullWeeks()
+  await loadFullWeeks()
   loading.value = false
+  window.setInterval(() => {
+    loadFullWeeks()
+  }, 10000)
 })
 </script>
