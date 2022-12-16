@@ -3,12 +3,12 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open#Sans&display=swap');
 
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: black;
 }
 
