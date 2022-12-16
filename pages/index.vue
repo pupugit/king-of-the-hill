@@ -1,8 +1,8 @@
 <template>
   <div class="page-index">
     <div class="page-loading" v-if="loading">Loading...</div>
-    <div class="page-weeks" v-else-if="weeks.length">
-      <BlockWeek v-for="week in weeks" :week="week" :key="week.id" />
+    <div class="page-weeks" v-else-if="currentWeek">
+      <BlockWeek :week="currentWeek" />
     </div>
     <div class="page-error" v-else>
       No matches found or there was an error loading the data!
