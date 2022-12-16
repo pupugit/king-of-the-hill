@@ -1,6 +1,6 @@
 <template>
   <div class="block-match">
-    <div>
+    <div style="border-bottom:1px solid black;margin-bottom:.25em">
       {{ startedF }}
     </div>
     <div>
