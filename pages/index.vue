@@ -38,7 +38,7 @@
 .page-loading,
 .page-error {
   background-color: antiquewhite;
-  margin-top: 4vh;
+  margin-top: 2vh;
   padding: 1em;
   border-radius: 2em;
 }

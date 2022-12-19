@@ -1,6 +1,9 @@
 <template>
   <div class="block-week">
     <h2>Week {{ week.nr }}: {{ startedF }}<br /><span style="font-weight: normal;font-size: .75em;">
+        Hosted by <strong>Sugoi</strong> <template v-if="week.cohost"> and <strong style="color:green">{{
+            week.cohost.name
+        }}</strong></template><br />
         <template v-if="week.status === 'upcoming'">
           Starting in <strong>{{ startingIn }}</strong>
         </template>
@@ -14,9 +17,9 @@
 </template>
 <style>
 .block-week {
-  margin-top: 4vh;
+  margin-top: 2vh;
   display: grid;
-  gap: 4vh;
+  gap: 2vh;
   place-items: center;
 }
 
@@ -30,7 +33,7 @@
 
 .matches {
   display: grid;
-  gap: 4vh;
+  gap: 2vh;
 }
 
 .match-0 {
