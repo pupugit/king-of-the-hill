@@ -8,6 +8,11 @@
           Starting in <strong>{{ startingIn }}</strong>
         </template>
         <template v-else-if="week.status === 'running'">currently running</template>
+        <div v-else-if="week.status === 'finished' && week.winner" class="week-winner">
+          <img src="/challenge_trophy_golden_cup.png" style="width: 1em;">
+          <span>The King of the Hill was <strong>{{ week.winner.name }}</strong></span>
+          <img src="/challenge_trophy_golden_cup.png" style="width: 1em;">
+        </div>
       </span></h2>
     <div :class="`matches size-${matches.length}`">
       <BlockMatch v-for="(match, idx) in matches" :match="match" :idx="idx" :key="match.id"
@@ -16,6 +21,13 @@
   </div>
 </template>
 <style>
+.week-winner {
+  display: grid;
+  grid-auto-flow: column;
+  gap: .25em;
+  place-items: center;
+}
+
 .block-week {
   margin-top: 2vh;
   display: grid;

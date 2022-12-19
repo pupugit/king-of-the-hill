@@ -56,6 +56,7 @@
   display: grid;
   grid-auto-flow: column;
   gap: .25em;
+  place-items: center;
 }
 </style>
 <script setup lang="ts">
