@@ -4,6 +4,7 @@
         <template v-if="week.status === 'upcoming'">
           Starting in <strong>{{ startingIn }}</strong>
         </template>
+        <template v-else-if="week.status === 'running'">currently running</template>
       </span></h2>
     <div :class="`matches size-${matches.length}`">
       <BlockMatch v-for="(match, idx) in matches" :match="match" :idx="idx" :key="match.id"
