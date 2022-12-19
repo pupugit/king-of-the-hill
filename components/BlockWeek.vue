@@ -65,7 +65,7 @@ const startingIn = ref('')
 onMounted(() => {
   if (started.value)
     startingIn.value = formatDistanceToNow(started.value)
-  window.setTimeout(() => {
+  window.setInterval(() => {
     if (started.value)
       startingIn.value = formatDistanceToNow(started.value)
   }, 60000)
