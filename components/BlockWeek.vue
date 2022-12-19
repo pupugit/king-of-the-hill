@@ -2,7 +2,7 @@
   <div class="block-week">
     <h2>Week {{ week.nr }}: {{ startedF }}<br /><span style="font-weight: normal;font-size: .75em;">
         <template v-if="week.status === 'upcoming'">
-          Starting in about <strong>{{ startingIn }}</strong>
+          Starting in <strong>{{ startingIn }}</strong>
         </template>
       </span></h2>
     <div :class="`matches size-${matches.length}`">
