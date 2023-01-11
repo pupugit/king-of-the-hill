@@ -2,7 +2,7 @@
   <div class="page-index">
     <div class="page-loading" v-if="loading">Loading...</div>
     <div class="page-weeks" v-else-if="currentWeek">
-      <BlockWeek :week="currentWeek" />
+      <BlockWeek :week="currentWeek" :current-king="currentKing" />
     </div>
     <div class="page-error" v-else>
       No matches found or there was an error loading the data!
@@ -118,6 +118,13 @@ const currentWeek = computed(() => {
     return weeks.value[0]
   }
   return null
+})
+const currentKing = computed(() => {
+  let ret = ''
+  weeks.value.forEach((w) => {
+    if (w.winner && ret === '') ret = w.winner.name
+  })
+  return ret
 })
 onMounted(async () => {
   await loadFullWeeks()
