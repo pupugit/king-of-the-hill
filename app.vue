@@ -3,12 +3,10 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Open#Sans&display=swap');
-
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
   background-color: black;
 }
 
