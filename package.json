@@ -10,11 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@vueuse/nuxt": "^9.10.0",
+    "@vueuse/nuxt": "^9.12.0",
     "date-fns": "^2.29.3",
-    "nuxt": "^3.0.0",
+    "nuxt": "^3.1.2",
     "nuxt-directus": "^3.2.2",
-    "sass": "^1.57.1",
-    "vue": "^3.2.45"
+    "sass": "^1.58.0",
+    "vue": "^3.2.47"
   }
 }
